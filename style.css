@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+
+}
+body{
+    
+    overflow-x: hidden;
+}
+.p-20-80{
+    padding: 20px 80px;
+}
+.flex-box{
+    display: flex;
+    align-items: center;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #fff6f6;
+
+}
+header h4{
+
+}
+button{
+background: #151515;
+padding: 10px 40px;
+color: #fff;
+font-size: 16px;
+font-weight: 500;
+letter-spacing: 2px;
+border: 1px solid #000000;
+transition: 0.2s;
+}
+button:hover{
+    background: #00000000;
+    color: #000;
+}
+/* SALE SECTION */
+.sale-now{
+    background: #151515;
+    padding: 14px 0;
+    justify-content: center;
+
+}
+.sale-now p {
+    color: #fff;
+}
+/* HERO SECTION */
+.hero{
+    justify-content: space-between;
+    height: 100vh;
+    background: #fff6f6;
+}
+.hero video{
+    margin-left: 40px;
+    width: 90%;
+}
+.hero .row{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.hero h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.hero p{
+    margin: 30px 0;
+}
+#hero-img{
+    
+    align-items: end;
+}
+.hero img{
+    width: 55%;
+}
+/* detail */
+.detail{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 200px 80px;
+}
+.detail h1{
+    
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.detail p{
+    margin: 20px 0 50px 0;
+}
+.detail .box{
+
+    text-align: center;
+}
+.detail video{
+width: 50%;
+}
+#details{
+    background: #ffefef;}
+/* features */
+.features{
+    flex-direction: column;
+}
+.features-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    
+}
+.features-box video{
+    width: 100%;
+}
+.features-box .des{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.features-box .des h1{
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 60px;
+}
+/* WHat u get */
+.whatuget img{
+    width: 120px;
+    margin: 50px 0 20px 0;
+}
+.whatuget ul li{
+    list-style:circle;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.whatuget .img-show{
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.whatuget .img-show img{
+    width: 40%;
+}
+/* review */
+
+.review .img-show{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review .img-show img{
+    
+    width: 30%;
+}
+
+
+/* Purchase */
+.purchase{
+    padding: 80px;
+    background: #fff6f6;
+}
+.purchase button{
+padding: 20px 40px;
+margin-bottom: 20px;
+}
+/* FAQ */
+.faq{
+    padding: 80px;
+    background: #ffdede;
+}
+.faq h1{
+    text-align: center;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color:#00000000;
+    background-image: none;
+    color: #000;
+    cursor: pointer;
+    padding: 24px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  .accordion {
+    border-radius: 0;
+    border-bottom: 0.5px solid #000;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color:#ff5858;
+    box-shadow: 0 0 1px;
+    color: #fff;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 10px 18px;
+    background: #ffdede;
+    display: none;
+    overflow: hidden;
+    font-size: 20px;
+    color: #000;
+  }
+  .panel p{
+    color: #000;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    font-size: 13px;
+    color: #ffd200;
+    float: right;
+    margin-left: 5px;
+  }
+
+  footer{
+    background: #ffb8b8;
+    color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 10px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  footer p a{
+    color: #9c3131;
+    text-decoration: none;
+  }
+  
+  @media (max-width:768px) {
+    .p-20-80{
+        padding: 20px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .flex-box{
+        flex-direction: column;
+    }
+
+    
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100vw;
+    flex-direction: row;
+
+}
+header h4{
+    font-size: 0.8em;
+}
+button{
+background: #000;
+padding: 10px 30px;
+color: #fff;
+font-size: 14px;
+font-weight: 500;
+letter-spacing: 2px;
+border: 1px solid #000000;
+transition: 0.2s;
+}
+button:hover{
+    background: #00000000;
+    color: #000;
+}
+/* SALE SECTION */
+.sale-now{
+    background: #000;
+    padding: 14px 0;
+    justify-content: center;
+
+}
+.sale-now p {
+    color: #fff;
+}
+/* HERO SECTION */
+.hero{
+    justify-content: space-between;
+    flex-direction: column;
+    height: auto;
+}
+.hero .row{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0;
+}
+.hero h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.hero p{
+    margin: 30px 0;
+}
+.hero img{
+    width: 100%;
+}
+/* detail */
+.detail{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 20px;
+}
+.detail h1{
+    
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.detail br{
+    display: none;
+}
+.detail p{
+    margin: 20px 0 50px 0;
+}
+.detail .box{
+
+    text-align: left;
+}
+.detail video{
+    width: 70%;
+}
+
+/* features */
+.features{
+    flex-direction: column;
+}
+.features br{
+    display: none;
+}
+.features-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    
+}
+.features-box img{
+    width: 100%;
+    margin: 20px 0;
+}
+.features-box .des{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 0px;
+}
+.features-box .des h1{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.features-box .des h1 br{
+    display: none;
+}
+/* WHat u get */
+.whatuget
+.whatuget img{
+    width: 120px;
+    margin: 50px 0 20px 0;
+}
+.whatuget ul li{
+    list-style:circle;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.whatuget .img-show{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.whatuget .img-show img{
+    width: 100%;
+}
+/* review */
+.review{
+    
+    text-align: center;
+}
+.review .img-show{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review .img-show img{
+    
+    width: 100%;
+}
+
+
+/* Purchase */
+.purchase{
+    padding: 80px 20px;
+}
+.purchase button{
+padding: 20px 40px;
+margin-bottom: 20px;
+}
+/* FAQ */
+.faq{
+    padding: 80px 20px;
+}
+.faq h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+  footer{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  }
+  
+  
+  
